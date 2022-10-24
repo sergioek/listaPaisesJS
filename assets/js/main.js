@@ -49,12 +49,18 @@ function cargar(){
 window.addEventListener('load',cargar());
 
 function verificar(valor){
+
+  if(valor===''){
+    alert('El campo esta vacio');
+    return false;
+  }
   if(arrayPaises.includes(valor.toUpperCase())){
     alert('El valor ingresado ya existe')
   }else{
     document.getElementById('campo1').value='';
     return true;
   }
+
 }
 
 const agregar = ()=>{
