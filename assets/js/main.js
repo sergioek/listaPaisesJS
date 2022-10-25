@@ -22,7 +22,7 @@ const actualizar = () =>{
   let indice = document.getElementById('modal-number').value;
 
   if(verificar(valorNuevo)){
-    arrayPaises[indice]=valorNuevo;
+    arrayPaises[indice]=valorNuevo.toUpperCase();
     cargar()
   }
 }
